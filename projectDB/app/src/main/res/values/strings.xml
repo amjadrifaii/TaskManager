@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Planify</string>
+    <string name="taskPrompt">Enter A Task</string>
+    <string name="taskDesc">Enter Task Description</string>
+    <string name="filter">Filter By Date</string>
+    <string name="save">Save Task</string>
+    <string name="view">View Tasks</string>
+    <string name="selectAll">Select All</string>
+    <string name="deleteSelected">Delete Selected</string>
+
+</resources>

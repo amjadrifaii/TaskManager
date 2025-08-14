@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/tasksFragment">
+
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.example.projectdb.TasksFragment"
+        android:label="task_frag"
+        tools:layout="@layout/task_frag">
+        <action
+            android:id="@+id/action_tasksFragment_to_taskShow"
+            app:destination="@id/taskShow" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/taskShow"
+        android:name="com.example.projectdb.TaskShow"
+        android:label="task_show"
+        tools:layout="@layout/task_show">
+        <argument
+            android:name="selectedDate"
+            android:defaultValue="-1L"
+            app:argType="long" />
+    </fragment>
+</navigation>
